@@ -16,6 +16,8 @@ This is documentation for nodes which are doing backups.
 # Operating system 
 
 * [Odroid default OS Ubuntu 20.04 : Ubuntu Kernel 4.19](https://wiki.odroid.com/odroid-m1/os_images/ubuntu/ubuntu)
+
+Alternative with mainline-kernel
 * [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) (https://forum.odroid.com/viewtopic.php?f=214&t=44575)
 
 # Workflow
