@@ -13,12 +13,12 @@ This is documentation for nodes which are doing backups.
 * [Badger 2040](https://shop.pimoroni.com/products/badger-2040) (eink display)
 * [USB-A (Male) to USB-C Cable](https://www.tekniikkaosat.fi/tuote/sign-lyhyt-usb-c-kaapeli-nylonista-5v-3a-20cm-hopea)
 
-# Software 
+# Operating system 
 
 * [Odroid default OS Ubuntu 20.04 : Ubuntu Kernel 4.19](https://wiki.odroid.com/odroid-m1/os_images/ubuntu/ubuntu)
 * [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) (https://forum.odroid.com/viewtopic.php?f=214&t=44575)
 
-# Concept
+# Workflow
 
 * Start
 * check local status 
