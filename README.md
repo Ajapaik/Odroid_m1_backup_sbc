@@ -1,5 +1,5 @@
 <a href="https://commons.wikimedia.org/wiki/File:Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg"><img align="right"   src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg/264px-Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg" /></a>
-This is documentation for backup devices. Target for the device is low power daily backup device which is robust enought to survive electrical blackouts and simple enough so that it can be duplicated for redundancy when needed.
+Target for the device is low power daily backup device which is robust enought to survive electrical blackouts and simple enough so that it can be duplicated for redundancy when needed.
 
 # Workflow
 
