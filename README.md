@@ -60,7 +60,7 @@ Information in the display
 
 
 # Flowchart
-<img src="https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg" width=75% >
+<img src="https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg" width=60% >
 
 
 
