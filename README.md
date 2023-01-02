@@ -1,17 +1,17 @@
 <a href="https://commons.wikimedia.org/wiki/File:Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg"><img align="right"   src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg/264px-Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg" /></a>
-Target for the device is low power daily backup device which is robust enought to survive electrical blackouts and simple enough so that it can be duplicated for redundancy when needed.
+The target for the device is a low-power daily backup device that is robust enough to survive electrical blackouts and simple enough so that it can be duplicated for redundancy when needed.
 
 # Workflow
 
 1. Wake up from suspend
-2. Update eink display with message backup started + TIMESTAMP
-3. Send heartbeat information to remote server
+2. Update e-ink display with message backup started + TIMESTAMP
+3. Send heartbeat information to a remote server
 4. Check that hardware is OK
 5. RSYNC databases 
 6. RSYNC images  
-7. Mount storage disk as readonly
+7. Mount storage disk as read-only
 8. Check using checksums that data was copied correctly
-9. Update eink display with message backup was succesfully finished + TIMESTAMP
+9. Update e-ink display with message backup was successfully finished + TIMESTAMP
 10. Suspend for 24h and goto #1
 
 # Hardware
