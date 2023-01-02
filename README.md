@@ -54,9 +54,7 @@ Information in the display
 ## On backup finished
 * Date/time
 * Local IP address
-* Internet access (OK/FAIL)
-* Ssh server (OK/FAIL)
-* State: "BACKUP OK"
+* State: "BACKUP READY, SLEEPING..."
 
 
 
