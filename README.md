@@ -1,8 +1,7 @@
-This is documentation for nodes which are doing backups.
+This is documentation for backup devices. Target for the device is to do daily backup so that it will survive electrical blackouts and network problems without failing.
 
 # Workflow
 
-TLDR:
 1. Wake up from suspend
 2. Update eink display that backup is started
 3. Send heartbeat information to remote server
@@ -12,11 +11,7 @@ TLDR:
 7. Mount storage disk as readonly
 8. Check using checksums that data was copied correctly
 9. Update eink display that backup was succesfully finished
-10. Suspend for 24h
-
-## Flowchart
-![alt text](https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg "Logo Title Text 1")
-
+10. Suspend for 24h and goto #1
 
 # Hardware
 
@@ -39,5 +34,10 @@ TLDR:
 
 Alternative with mainline-kernel
 * [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) (https://forum.odroid.com/viewtopic.php?f=214&t=44575)
+
+# Flowchart
+<img src="https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg" width=75% >
+
+
 
 
