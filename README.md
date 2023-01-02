@@ -1,5 +1,23 @@
 This is documentation for nodes which are doing backups.
 
+# Workflow
+
+TLDR:
+1. Wake up from suspend
+2. Update eink display that backup is started
+3. Send heartbeat information to remote server
+4. Check that hardware is OK
+5. RSYNC databases 
+6. RSYNC images  
+7. Mount storage disk as readonly
+8. Check using checksums that data was copied correctly
+9. Update eink display that backup was succesfully finished
+10. Suspend for 24h
+
+## Flowchart
+![alt text](https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg "Logo Title Text 1")
+
+
 # Hardware
 
 * [Odroid M1 8GB](https://www.hardkernel.com/shop/odroid-m1-with-8gbyte-ram/)
@@ -13,6 +31,8 @@ This is documentation for nodes which are doing backups.
 * [Badger 2040](https://shop.pimoroni.com/products/badger-2040) (eink display)
 * [USB-A (Male) to USB-C Cable](https://www.tekniikkaosat.fi/tuote/sign-lyhyt-usb-c-kaapeli-nylonista-5v-3a-20cm-hopea)
 
+* surge protector (?)
+
 # Operating system 
 
 * [Odroid default OS Ubuntu 20.04 : Ubuntu Kernel 4.19](https://wiki.odroid.com/odroid-m1/os_images/ubuntu/ubuntu)
@@ -20,7 +40,4 @@ This is documentation for nodes which are doing backups.
 Alternative with mainline-kernel
 * [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) (https://forum.odroid.com/viewtopic.php?f=214&t=44575)
 
-# Workflow
 
-* Start
-* check local status 
