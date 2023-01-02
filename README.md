@@ -1,4 +1,4 @@
-This is documentation for backup devices. Target for the device is to do daily backup so that it will survive electrical blackouts and network problems without failing.
+This is documentation for backup devices. Target for the device is low power daily backup device which is robust enought to survive electrical blackouts and simple enough so that it can be duplicated for redundancy when needed.
 
 # Workflow
 
