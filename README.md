@@ -35,6 +35,31 @@ This is documentation for backup devices. Target for the device is low power dai
 Alternative with mainline-kernel
 * [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) (https://forum.odroid.com/viewtopic.php?f=214&t=44575)
 
+# Eink display
+Information in the display
+## On boot
+* Date/time
+* Local IP address
+* Internet access state (OK/FAIL)
+* Ssh server state (OK/FAIL)
+* State: "START
+
+## On failure
+* Date/time
+* Local IP address
+* Internet access state (OK/FAIL)
+* Ssh server state (OK/FAIL)
+* State: "FAILED (NUMBER)"
+
+## On backup finished
+* Date/time
+* Local IP address
+* Internet access (OK/FAIL)
+* Ssh server (OK/FAIL)
+* State: "BACKUP OK"
+
+
+
 # Flowchart
 <img src="https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg" width=75% >
 
