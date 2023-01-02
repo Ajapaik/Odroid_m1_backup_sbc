@@ -4,14 +4,14 @@ Target for the device is low power daily backup device which is robust enought t
 # Workflow
 
 1. Wake up from suspend
-2. Update eink display that backup is started
+2. Update eink display with message backup started + TIMESTAMP
 3. Send heartbeat information to remote server
 4. Check that hardware is OK
 5. RSYNC databases 
 6. RSYNC images  
 7. Mount storage disk as readonly
 8. Check using checksums that data was copied correctly
-9. Update eink display that backup was succesfully finished
+9. Update eink display with message backup was succesfully finished + TIMESTAMP
 10. Suspend for 24h and goto #1
 
 # Hardware
