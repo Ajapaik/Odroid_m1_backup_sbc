@@ -30,7 +30,7 @@ The target for the device is a low-power daily backup device that is robust enou
 * surge protector (?)
 
 ## Install notes
-* Boards m.2 screw is using _very small_ phillips screwdriver head
+* m.2 screw is using _very small_ phillips screwdriver head
 * eMMC card needs to be installed before board is installed to KKSB case as there is no room for fingers next to eMMC slot when it is in place
 
 # Power consumption notes
