@@ -29,12 +29,23 @@ The target for the device is a low-power daily backup device that is robust enou
 
 * surge protector (?)
 
+## Install notes
+* Boards m.2 screw is using _very small_ phillips screwdriver head
+* eMMC card needs to be installed before board is installed to KKSB case as there is no room for fingers next to eMMC slot when it is in place
+
+# Power consumption notes
+* Board with default OS (emmc with Ubuntu 20.04 ) average power consumption was ~3.5W (2.1.2022)
+* Board with Ubuntu 22.04 via Petiboot (emmc, commandline only) average power consumption was ~4W (2.1.2022)
+ 
 # Operating system 
 
+## Default OS
 * [Odroid default OS Ubuntu 20.04 : Ubuntu Kernel 4.19](https://wiki.odroid.com/odroid-m1/os_images/ubuntu/ubuntu)
 
-Alternative with mainline-kernel
-* [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) - ([Odroid forum](https://forum.odroid.com/viewtopic.php?f=214&t=44575))
+## Alternatives 
+* [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) - ([Odroid forum](https://forum.odroid.com/viewtopic.php?f=214&t=44575)) (uses mainline kernel, doesn't support emmc?)
+* Ubuntu 22.04 with 5.18 kernel (installable via Petiboot netboot installer)
+* Debian 11 (installable via Petiboot netboot installer)
 
 # Eink display
 Information in the display
@@ -56,8 +67,6 @@ Information in the display
 * Date/time
 * Local IP address
 * State: "BACKUP READY, SLEEPING..."
-
-
 
 # Flowchart
 <img src="https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg" width=60% >
