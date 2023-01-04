@@ -36,6 +36,7 @@ The target for the device is a low-power daily backup device that is robust enou
 # Power consumption notes
 * Board with default OS (emmc with Ubuntu 20.04 ) average power consumption was ~3.5W (2.1.2022)
 * Board with Ubuntu 22.04 via Petiboot (emmc, commandline only) average power consumption was ~4W (2.1.2022)
+* Board with Debian bullseye install via Petiboot (emmc+Samsung 970 EVO Nvme) 8.4W max (4.1.2022)
  
 # Operating system 
 
