@@ -49,6 +49,18 @@ The target for the device is a low-power daily backup device that is robust enou
 * Debian 11 (installable via Petiboot netboot installer)
 
 # Eink display
+## Badger 2040 with mpremote
+
+```
+sudo apt-get install python3-venv
+source venv/bin/activate
+pip install mpremote
+mpremote exec "import badger2040; badger=badger2040.Badger2040();badger.pen(0);badger.text('Testing ...', 20,20);badger.update()"
+```
+
+; Example boot status script
+* [badger.sh](badger.sh)
+
 Information in the display
 ## On boot
 * Date/time
