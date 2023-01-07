@@ -81,6 +81,25 @@ Information in the display
 * Local IP address
 * State: "BACKUP READY, SLEEPING..."
 
+# GPG Keys
+* https://www.jwillikers.com/backup-and-restore-a-gpg-key
+
+## encrypt
+```
+cat file.gz | gpg --encrypt --batch --cipher-algo AES256 --compress-algo none -r b763e320fe05cc67744d8353d88eb927 -o file.gz.enc --trusted-key b763e320fe05cc67744d8353d88eb927 
+gpg --output private.pgp --armor --export-secret-key b763e320fe05cc67744d8353d88eb927
+```
+
+On target machine
+## restore
+```
+scp username@source.org:/home/backup/private.pgp /home/restore/private.gpg
+scp username@source.org:/home/backup/file.gz.enc /home/restore/file.gz.enc
+
+gpg -o private.gpg --export-options backup --export-secret-keys
+gpg --decrypt file.gz.enc |gzip -t
+```
+
 # Flowchart
 <img src="https://github.com/Ajapaik/Odroid_m1_backup_sbc/blob/main/Odroid%20M1%20backup%20node%20workflow.drawio.svg" width=60% >
 
