@@ -32,6 +32,7 @@ The target for the device is a low-power daily backup device that is robust enou
 ## Install notes
 * m.2 screw is using _very small_ phillips screwdriver head
 * eMMC card needs to be installed before board is installed to KKSB case as there is no room for fingers next to eMMC slot when it is in place
+* Odroid M1 SATA Mount and Cable Kit screws are too long for attaching SSD:st to plate with some drives and additional screws are needed. For example Samsung PM897 screwholes are shorter than screws.
 
 # Power consumption notes
 * Board with default OS (emmc with Ubuntu 20.04 ) average power consumption was ~3.5W (2.1.2022)
