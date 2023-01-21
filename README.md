@@ -8,11 +8,12 @@ The target for the device is a low-power daily backup device that is robust enou
 3. Send heartbeat information to a remote server
 4. Check that hardware is OK
 5. RSYNC databases 
-6. RSYNC images  
-7. Mount storage disk as read-only
-8. Check using checksums that data was copied correctly
-9. Update e-ink display with message backup was successfully finished + TIMESTAMP
-10. Suspend for 24h and goto #1
+6. RSYNC images
+7. BACKUP Github repositories
+8. Mount storage disk as read-only
+9. Check using checksums that data was copied correctly
+10. Update e-ink display with message backup was successfully finished + TIMESTAMP
+11. Suspend for 24h and goto #1
 
 # Hardware
 
