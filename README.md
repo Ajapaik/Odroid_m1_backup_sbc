@@ -53,15 +53,15 @@ The target for the device is a low-power daily backup device that is robust enou
 
 ### Data drive Filesystem options
 * Ext4 + md5sums for detecting bitrot + rsync --backup + optionally par2 data for recovering data 
-** simple in filesystem level, but complex to implement scripting
+  - simple in filesystem level, but complex to implement scripting
 * Ext4 + FS-PARITY for detecting bitrot + rsync --backup 
-** works only for read only files, doesn't allow updating image files
+  - works only for read only files, doesn't allow updating image files
 * Zfs + snapshots + optionally two data copies for self-healing
-** Stable and well working, Incompatible licence with Linux kernel, doesn't work with Petiboot installations (requires Armbian to work out-of-the-box)
+  - Stable and well working, Incompatible licence with Linux kernel, doesn't work with Petiboot installations (requires Armbian to work out-of-the-box)
 * Btrfs + snapshots + optionally two data copies for self-healing
-** Unstable reputation on unexpected KERNEL HALTS or powerloss
+  - Unstable reputation on unexpected KERNEL HALTS or powerloss
 * Bcachefs
-** Beta and is not mainlined. Requires 6.2 kernel ( = Armbian) . Supports snapshots and checksumming and erasure coding.
+  - Beta and is not mainlined. Requires 6.2 kernel ( = Armbian) . Supports snapshots and checksumming and erasure coding.
 
 # Eink display
 ## Badger 2040 with mpremote
