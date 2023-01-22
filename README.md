@@ -49,6 +49,19 @@ The target for the device is a low-power daily backup device that is robust enou
 * [Armbian stable 22.11 with 6.1.y](https://www.armbian.com/odroid-m1/) - ([Odroid forum](https://forum.odroid.com/viewtopic.php?f=214&t=44575)) (uses mainline kernel, doesn't support emmc?)
 * Ubuntu 22.04 with 5.18 kernel (installable via Petiboot netboot installer)
 
+## OS Notes
+
+### Data drive Filesystem options
+* Ext4 + md5sums for detecting bitrot + rsync --backup + optionally par2 data for recovering data 
+** simple in filesystem level, but complex to implement scripting
+* Ext4 + FS-PARITY for detecting bitrot + rsync --backup 
+** works only for read only files, doesn't allow updating image files
+* Zfs + snapshots + optionally two data copies for self-healing
+** Stable and well working, Incompatible licence with Linux kernel, doesn't work with Petiboot installations (requires Armbian to work out-of-the-box)
+* Btrfs + snapshots + optionally two data copies for self-healing
+** Unstable reputation on unexpected KERNEL HALTS or powerloss
+* Bcachefs
+** Beta and is not mainlined. Requires 6.2 kernel ( = Armbian) . Supports snapshots and checksumming and erasure coding.
 
 # Eink display
 ## Badger 2040 with mpremote
@@ -60,7 +73,7 @@ pip install mpremote
 mpremote exec "import badger2040; badger=badger2040.Badger2040();badger.pen(0);badger.text('Testing ...', 20,20);badger.update()"
 ```
 
-; Example boot status script
+# Example boot status script
 * [badger.sh](badger.sh)
 
 Information in the display
