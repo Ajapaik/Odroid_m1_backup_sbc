@@ -1,6 +1,8 @@
 <a href="https://commons.wikimedia.org/wiki/File:Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg"><img align="right"   src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg/264px-Odroid_M1_with_SATA_mount_cablekit_with_Samsung_SATA_SSD_drive.jpg" /></a>
 The target for the device is a low-power daily backup device that is robust enough to survive electrical blackouts and simple enough so that it can be duplicated for redundancy when needed.
 
+* [Read more about project background](Background.md)
+
 # Workflow
 
 1. Wake up from suspend
