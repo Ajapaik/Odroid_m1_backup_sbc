@@ -26,7 +26,7 @@ In our plan, we intended to use two nodes in physically separate locations, with
 
 As single-board computers, power consumption is very low, for Odroid M1, it is 6W, and in our strategy, it is mostly powered down the power consumption is minimal. Single-board computers are small, and overall material footprint and transport costs are smaller than traditional computers.
 
-Regarding hardware lifespan, disk space will run out at some point, but it will take over five years at the current speed. Then the SSD will need to be replaced with a larger one, or we need to change the backup strategy. Peripheral components (power adapters, disks, batteries, e-ink displays) can be replaced and are produced by multiple manufacturers. Information about the Odroid M1 and e-ink displays, including schematics, is publicly available, making repairs at some level possible. 
+Regarding hardware lifespan, disk space will run out at some point, but it will take over five years at the current speed. Then the SSD will need to be replaced with a larger one, or we need to change the backup strategy. Peripheral omponents (power adapters, disks, batteries, e-ink displays) can be replaced and are produced by multiple manufacturers. So we should be able to replace all individual components if they break. Information about the Odroid M1 and e-ink displays, including schematics, is publicly available, making repairs at some level possible. 
 
 The biggest unknown issue is on mainline Linux support. If there is mainline Linux support, then there is working hardware support for the entire lifetime of the hardware. However, if the mainline support needs to be included, then software support may be substantially shorter than the hardware's lifetime.
 
