@@ -45,6 +45,8 @@ The target for the device is a low-power daily backup device that is robust enou
 * Board with Ubuntu 22.04 via Petiboot (emmc+Samsung PM897, commandline only) average power consumption was 5.7W (21.1.2022)
 * Board with Debian GNU/Linux 11 (bullseye) (emmc+Samsung PM897 2.5" SATA+ 970 EVO Nvme + Badger eink) 4.86 W idle (20.10.2024)
 * Board with Debian GNU/Linux 12 (bookworm) (emmc+Intel 1600x 118GB nvme) idle: 5.3W, load 8W (20.10.2024)
+* Board with Debian GNU/Linux 12 (bookworm) (emmc+Intel 1600x 118GB nvme + PM897 SATA) idle: 6.5W (20.10.2024)
+
  
 # Operating system 
 * Debian 11 (installable via Petiboot netboot installer)
