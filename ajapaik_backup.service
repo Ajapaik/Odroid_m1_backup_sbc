@@ -1,0 +1,14 @@
+# /etc/systemd/system/ajapaik_backup.service
+[Unit]
+Description=Backup and eink status service
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+ExecStart=/usr/bin/backup.sh boot &
+Type=oneshot
+User=zache
+Group=zache
+
+[Install]
+WantedBy=network-online.target
