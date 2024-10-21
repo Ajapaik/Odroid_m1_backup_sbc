@@ -46,7 +46,8 @@ The target for the device is a low-power daily backup device that is robust enou
 * Board with Debian GNU/Linux 11 (bullseye) (emmc+Samsung PM897 2.5" SATA+ 970 EVO Nvme + Badger eink) 4.86 W idle (20.10.2024)
 * Board with Debian GNU/Linux 12 (bookworm) (emmc+Intel 1600x 118GB nvme) idle: 5.3W, load 8W (20.10.2024)
 * Board with Debian GNU/Linux 12 (bookworm) (emmc+Intel 1600x 118GB nvme + PM897 SATA) idle: 6.5W (20.10.2024)
-* Board with Ubuntu 24.04.1 LTS  (emmc+Intel 1600x 118GB nvme + PM897 SATA) idle: 6.53, with HDMI: 6.96W (20.10.2024)
+* Board with Ubuntu 24.04.1 LTS  (emmc+Intel 1600x 118GB nvme + PM897 SATA) idle: 6.53 W, with HDMI: 6.96W (20.10.2024)
+* Board with Debian GNU/Linux 12  (emmc+ WD Black SN850X nvme + PM897 SATA) idle: 6.43W, with HDMI: 7W (21.10.2024)
  
 # Operating system 
 * Debian 11 (installable via Petiboot netboot installer)
