@@ -92,6 +92,7 @@ rsync_file() {
 
 daily_db_filename=ajapaik_web_db_daily_$(date +%d).psql.gz.enc
 weekly_db_filename=ajapaik_web_db_weekly_$(date -dlast-monday +%Y-%m-%d).psql.gz.enc
+project_db_filename=ajapaik_project_daily_$(date +%d).psql.gz
 
 sleep 5
 wait_for_internet
@@ -102,6 +103,8 @@ sleep 5
 rsync_file $weekly_db_filename
 sync
 rsync_file $daily_db_filename
+sync
+rsync_file $project_db_filename
 
 sync
 badger_message "backup OK"
