@@ -57,8 +57,8 @@ rsync_file() {
     if [ $? -ne 0 ]
     then
         slack_message "$(date) backup node: Error happened in downloading backups ($SOURCE_FILENAME): Error in rsync, exit code was: $rsync_status"
-        ajapaik_notify "backup_rsync_failed"
-        badger_message "rsync failed"
+        ajapaik_notify "backup_rsync_db_failed"
+        badger_message "rsync db failed"
         exit 1
     fi
 
@@ -90,6 +90,25 @@ rsync_file() {
     fi
 }
 
+rsync_media() {
+    rsync $RSYNC_SERVER:/media "/media/btrfs_mirror/media" -avr --partial --append-verify
+
+    # Retry once if transfer fails
+    if [ $? -ne 0 ]
+    then
+        echo "Retrying rsync_media() (#1)"
+        rsync $RSYNC_SERVER:/media "/media/btrfs_mirror/media" -avr --partial --append-verify
+    fi
+
+    if [ $? -ne 0 ]
+    then
+        slack_message "$(date) backup node: Error happened in downloading media ($SOURCE_FILENAME): Error in rsync, exit code was: $?"
+        ajapaik_notify "backup_rsync_media_failed"
+        badger_message "rsync media failed"
+        exit 1
+    fi
+}
+
 daily_db_filename=ajapaik_web_db_daily_$(date +%d).psql.gz.enc
 weekly_db_filename=ajapaik_web_db_weekly_$(date -dlast-monday +%Y-%m-%d).psql.gz.enc
 project_db_filename=ajapaik_project_daily_$(date +%d).psql.gz
@@ -105,10 +124,17 @@ sync
 rsync_file $daily_db_filename
 sync
 rsync_file $project_db_filename
-
 sync
-badger_message "backup OK"
-ajapaik_notify "backup_ok"
+
+badger_message "backup db OK"
+ajapaik_notify "backup_db_ok"
+sleep 5
+
+sleep 5
+rsync_media
+sync
+badger_message "backup media OK"
+ajapaik_notify "backup_media_ok"
 
 sleep 180
 sudo /home/zache/set_wakealarm_and_shutdown.sh
