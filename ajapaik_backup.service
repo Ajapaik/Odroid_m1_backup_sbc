@@ -11,4 +11,4 @@ User=zache
 Group=zache
 
 [Install]
-WantedBy=network-online.target
+WantedBy=multi-user.target
