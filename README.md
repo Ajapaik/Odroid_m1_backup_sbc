@@ -27,10 +27,11 @@ The target for the device is a low-power daily backup device that is robust enou
 * [128GB eMMC Linux Module for Odroid M1](https://www.hardkernel.com/shop/128gb-emmc-module-m1-linux/) (boot & root drive)
 * [Odroid M1 SATA Mount and Cable Kit](https://www.hardkernel.com/shop/m1-sata-mount-and-cable-kit/) (documentation: [Odroid wiki](https://wiki.odroid.com/accessory/cables/sata_holder?s[]=odroid&s[]=m1&s[]=sata))
 * [Samsung PM897 2.5" SSD 3.84TB](https://semiconductor.samsung.com/resources/brochure/Samsung%20SATA%20SSD%20PM893%20%20PM897.pdf) (storage drive)
+* OPT1 [WD Black SN850X nvme 4TB](https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/internal-drives/wd-black-ssd/data-sheet-wd-black-sn850x-nvme-ssd.pdf) (secondary storage drive (Btrfs RAID-1), without heatsink)
+* OPT2 [Intel 1600x 118GB](https://www.intel.com/content/www/us/en/products/sku/211867/intel-optane-ssd-p1600x-series-118gb-m-2-80mm-pcie-3-0-x4-3d-xpoint/specifications.html) (work drive if Btrfs RAID1 is not used)
 * [Badger 2040](https://shop.pimoroni.com/products/badger-2040) (eink display)
 * [USB-A (Male) to USB-C Cable](https://www.tekniikkaosat.fi/tuote/sign-lyhyt-usb-c-kaapeli-nylonista-5v-3a-20cm-hopea)
-
-* surge protector (?)
+* [APC PM5U-GR](https://www.se.com/fi/fi/product/PM5U-GR/apc-essential-surgearrest-5-outlets-with-5v-2-4a-2-port-usb-charger-230v-germany/) (surge protector) 
 
 ## Install notes
 * m.2 screw is using _very small_ phillips screwdriver head
