@@ -51,7 +51,7 @@ The target for the device is a low-power daily backup device that is robust enou
 * Board with Debian GNU/Linux 12  (emmc+ WD Black SN850X nvme + PM897 SATA) idle: 6.43W, with HDMI: 7W (21.10.2024)
  
 # Operating system 
-* Debian 11 (installable via Petiboot netboot installer)
+* Debian GNU/Linux 12  (installable via Petiboot netboot installer)
 
 # Alternatives
 * [Odroid default OS Ubuntu 20.04 : Ubuntu Kernel 4.19](https://wiki.odroid.com/odroid-m1/os_images/ubuntu/ubuntu)
@@ -61,19 +61,10 @@ The target for the device is a low-power daily backup device that is robust enou
 ## OS Notes
 
 ### Data drive Filesystem options
-* Ext4 + md5sums for detecting bitrot + rsync --backup + optionally par2 data for recovering data 
-  - simple in filesystem level, but complex to implement scripting
-* Ext4 + FS-PARITY for detecting bitrot + rsync --backup 
-  - works only for read only files, doesn't allow updating image files
-* Zfs + snapshots + optionally two data copies for self-healing
-  - Stable and well working, Incompatible licence with Linux kernel, doesn't work with Petiboot installations (requires Armbian to work out-of-the-box)
 * Btrfs + snapshots + optionally two data copies for self-healing
-  - Unstable reputation on unexpected KERNEL HALTS or powerloss
-* Bcachefs
-  - Beta and is not mainlined. Requires 6.2 kernel ( = Armbian) . Supports snapshots and checksumming and erasure coding.
 
 # Eink display
-## Badger 2040 with mpremote
+## Badger 2040 with mpremote connected via usb-A -> usb-C cable
 
 ```
 sudo apt-get install python3-venv
